@@ -1,0 +1,8 @@
+>>>>>>>>>>>>>>>>>PLAN TO MAKE API FOR FILTER PAGE<<<<<<<<<<<<<<<<<
+
+1) get restaurants wrt mealtype(Breakfast/lunch/..)         => type.mealtype
+2) get restaurants wrt location                             => city
+3) get restaurants wrt cuisine                              => Cuisine.cuisine:{$in:["1","5"]}
+4) get restaurants wrt cost                                 => $and:[{cost:{$gt:200, $lt:500}}]
+5) sort the restaurants                                     => .sort({"cost":1 or -1})
+6) get restaurants wrt pagination                           => .skip(2).limit(2)

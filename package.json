@@ -1,0 +1,17 @@
+{
+  "name": "edumato-api-filterpage",
+  "version": "1.0.0",
+  "description": "This is an api for filter page,edumato",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongo": "^0.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start":"node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "naga",
+  "license": "ISC"
+}
