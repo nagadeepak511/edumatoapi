@@ -77,6 +77,13 @@ app.get('/restaurants', (req, res)=>{
     })
 })
 
+app.get('/restaurantDetails/:restaurant_id', (req, res)=>{
+    db.collection('restaurantdata').find({"restaurant_id":Number(req.params.restaurant_id)}).toArray((err, result)=>{
+        if(err) throw err;
+        res.send(result)
+    })
+})
+
 // connect db
 MongoClient.connect(mongoUrl, (err, client)=>{
     if(err) console.log('error while connecting');
